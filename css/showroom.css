@@ -1,0 +1,137 @@
+@charset 'utf-8';
+@import url(common.css);
+/* showroom.css */
+
+.color1
+{font-size: 3rem; line-height: 3rem;
+    color: rgb(0, 65, 0);
+}
+.color2 {
+    font-size: 3rem;
+    color:#666; 
+}
+.color3 {
+    font-size: 1.2rem;
+    line-height: 4rem;
+}
+.color4 {
+    line-height: 1.7rem;
+    font-weight: 500;
+    padding-bottom: 2%;
+}
+.color5 {
+    font-size: 3rem; line-height: 3rem;
+    color: rgb(10, 141, 10);
+}
+
+.showroom_top{
+    width: 100%;
+    padding-top: 5% ;
+    position: relative;
+}
+.showroom_top > img {
+    width: 100%;
+}
+.top_txt { 
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    color: white;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.showroom {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5% 0 10%;
+}
+.showroom_title{
+    text-align: center;
+    padding: 0 0 7%;
+}
+
+
+.showroom_table{
+border-top: 1px #333 solid;
+}
+
+
+.map_guide {
+    border-bottom: 1px #333 solid;
+
+}
+.the_place {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.place {
+    width: 15%;
+    padding: 3% 0;
+    font-weight: 700;
+}
+.adress {
+    width: 75%;
+    white-space: pre-line;
+    font-weight: 500;
+
+}
+.arrow_icon {
+    width: 10%;
+    padding: 0 1% 0 0;
+}
+
+.arrow{
+    position:relative;
+    width: 50px; height: 40px;
+    margin-left: auto;
+}
+
+.arrow span{
+    position:absolute;
+    left:0;
+    width:60%; height:2px;
+    background-color:rgb(0, 65, 0);
+}
+.arrow span:nth-child(1){
+    transform: rotate(45deg);
+    top: calc(30%)
+}
+.arrow span:nth-child(2){
+    transform: rotate(-45deg);
+    top: calc(30%);
+    left: calc(40%);
+}
+
+.arrow:active span:nth-child(1){
+    transform: rotate(-45deg);
+}
+.arrow:active span:nth-child(2){
+    transform: rotate(45deg);
+}
+
+.hidden_map{
+    display: none;
+}
+/* .arrow:active .hidden_map{
+    display: block;
+} */
+
+
+
+
+.hidden_map {
+    display: none;
+    width: 75%;
+    margin-left: auto;
+    padding: 2% 0 5% 0;
+    background: #333;
+    height: 800px;
+}
+
+.hidden_map > img{
+    width: 100%;
+}

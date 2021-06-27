@@ -1,0 +1,99 @@
+@charset 'utf-8';
+@import url(common.css);
+/* product.css */
+
+
+.living_room_wrap {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.living_title{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.box1 {
+    width: 30%;
+    padding: 10% 0;
+    margin-left: auto;
+} 
+
+
+.thumb {
+    overflow: hidden;
+}
+
+.thumb a {
+    position: relative;
+}
+
+.thumb > a > img {
+    width: 100%;
+    transition: all 0.2s linear;
+}
+
+.thumb > a:hover img {
+    transform: scale(1.1);
+}
+
+
+
+.another {
+    display: none;
+    position: absolute;
+    transform: translateY(-100%)
+}    
+.thumb1 > a:hover .another {
+    display: block;
+}
+
+
+
+
+
+.product_name {
+    padding: 5% 0 0;
+    font-size: 1.2rem;
+}
+
+del {
+    text-decoration: line-through;
+    color: #999;
+    padding-left: 1%;
+}
+
+
+.box2 {
+    width: 60%;
+    padding: 10% 0;
+    margin-right: auto;
+} 
+
+.two_box{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box3 {
+    width: 30%;
+
+} 
+
+.box4 {
+    width: 30%;
+    margin-left: 2%;
+} 
+
+.box6 {
+    width: 80%;
+    padding: 10% 0;
+    margin: 0 auto;
+} 
+
+.box7 {
+    width: 30%;
+    padding: 10% 0;
+    margin-right: auto;
+} 

@@ -1,0 +1,119 @@
+*{margin:0;}
+
+.head-1{
+    background-color:#eee;
+}
+.head-1 > div{
+    width:80%; 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+}
+.head-1 > div h1{}
+.head-1 > div nav{}
+.head-1 > div nav > a{
+    width:26px; height:14px;
+    position:relative;
+    display:inline-block;
+    z-index:99999;
+}
+.head-1 > div nav > a span{
+    position:absolute;
+    left:0;
+    width:100%; height:2px;
+    background-color:#f00;
+    transition:0.5s;
+}
+.head-1 > div nav > a span:nth-child(1){
+    top:0;
+}
+.head-1 > div nav > a span:nth-child(2){
+    top:calc(50% - 1px);
+}
+.head-1 > div nav > a span:nth-child(3){
+    bottom:0;
+}
+
+/* hover */
+.head-1 > div nav > a:hover span:nth-child(1){
+    top:calc(50% - 1px);
+    transform: rotate(45deg);
+}
+.head-1 > div nav > a:hover span:nth-child(2){
+    top:calc(50% - 1px);
+    opacity:0;
+}
+.head-1 > div nav > a:hover span:nth-child(3){
+    bottom:calc(50% - 1px);
+    transform: rotate(-45deg);
+}
+
+.head-1 > div nav > div{
+    position:fixed;
+    left:0; top:0;
+
+    width:100%; height:100%;
+    background-color:rgba(0,0,0,0.6);
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display:none;
+}
+.head-1 > div nav > div a{
+    padding:30px 0;
+    color:#fff;
+    font-size:3em;
+}
+
+.head-1 > div nav > a:hover + div{
+    display:flex;
+}
+
+/* 
+레이아웃 확보 1순위
+내용 포장하는 작업은 2순위 
+*/
+.head-2{
+    background-color:yellow;
+}
+.head-2 div{
+    width:80%; margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-2 h1{}
+.head-2 h1 a{}
+.head-2 nav{}
+.head-2 nav a{}
+.head-2 .menu_trigger{
+    position:relative;
+    width:30px; height:20px;
+}
+.head-2 .menu_trigger span{
+    position:absolute;
+    left:0;
+    width:100%; height:2px;
+    background-color:#f00;
+    transition:0.5s;
+}
+.head-2 .menu_trigger span:nth-child(1){
+    top:0;
+}
+.head-2 .menu_trigger span:nth-child(2){
+    top:calc(50% - 1px);
+}
+.head-2 .menu_trigger span:nth-child(3){
+    bottom:0;
+}
+/* 버거메뉴 hover */
+.head-2 .mobile{ 
+    display: none; 
+}
+
+.head-2 .menu_trigger:hover + .mobile{
+    display:block;
+}
