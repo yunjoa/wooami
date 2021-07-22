@@ -43,57 +43,62 @@
 .showroom {
     width: 80%;
     margin: 0 auto;
-    padding: 5% 0 10%;
+    padding: 5% 0 5%;
 }
 .showroom_title{
     text-align: center;
-    padding: 0 0 7%;
 }
 
 
 .showroom_table{
-border-top: 1px #333 solid;
 }
 
 
 .map_guide {
-    border-bottom: 1px #333 solid;
+    border-collapse:collapse;
+    width: 100%;
+        position:relative;
+
 
 }
 .the_place {
-    width: 100%;
+    width: 80%;
+    margin: 0 10% 5%;
+    border-top: 1px #333 solid;
+    position:relative;
+
+}
+
+.the_place > li{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2% 0;
+    width: 100%;
+    padding: 3%;
+    border-bottom: 1px solid #999;
 }
-
-.place {
-    width: 15%;
-    padding: 3% 0;
-    font-weight: 700;
-}
-.adress {
-    width: 75%;
-    white-space: pre-line;
-    font-weight: 500;
-
-}
-.arrow_icon {
+.the_place > li > p {
     width: 10%;
-    padding: 0 1% 0 0;
+    padding: 0 5% 0 0;
+    font-weight: 900;
+}
+.the_place > li > span{
+    font-weight: 300;
+    padding: 0 5%;
+    line-height: 1.5rem;
+}
+
+.arrow_icon {
+    width: 5%;
+    margin-left: auto;
+    border: springgreen 2px solid;
 }
 
 .arrow{
-    position:relative;
     width: 50px; height: 40px;
     margin-left: auto;
-}
-
-.arrow span{
     position:absolute;
-    left:0;
-    width:60%; height:2px;
+}
+.arrow span{
+    width:30%; height:2px;
     background-color:rgb(0, 65, 0);
 }
 .arrow span:nth-child(1){
@@ -113,15 +118,9 @@ border-top: 1px #333 solid;
     transform: rotate(45deg);
 }
 
-.hidden_map{
-    display: none;
-}
-/* .arrow:active .hidden_map{
-    display: block;
-} */
 
 
-
+/* 
 
 .hidden_map {
     display: none;
@@ -134,4 +133,4 @@ border-top: 1px #333 solid;
 
 .hidden_map > img{
     width: 100%;
-}
+} */

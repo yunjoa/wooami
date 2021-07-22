@@ -7,68 +7,14 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="./css/showroom.css">
+
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="js/showroom.js"></script>
 <body>
 
-    <header class="nav_wrap">
-        <div>
-            <h1><a href="index.html"><img src="img/wooami_logo.png" alt=""></a> </h1>            
-            <div class="gnb">
-                <ul>
-                    <li><a class href="company.html">우아미가구</a>
-                        <!-- after -->
-                        <div class="view">
-                            <ul>
-                                <li><a href="./company.html">회사소개</a></li>
-                                <li><a href="./showroom.html">쇼룸</a></li>
-                                <li><a href="partners.html">파트너쉽</a></li>
-                            </ul>
-                        </div>
-                    </li> 
-                
-                    <li><a href="">침실가구</a>
-                        <!-- after -->
-                        <div class="view">
-                            <ul>
-                                <li><a href="#">침대</a></li>
-                                <li><a href="#">매트리스</a></li>
-                                <li><a href="#">서랍장</a></li>
-                            </ul>
-                        </div>
-                    </li>
-            
-                    <li><a href="product.html">거실가구</a>
-                        <!-- after -->
-                        <div class="view">
-                            <ul>
-                                <li><a href="#">소파</a></li>
-                                <li><a href="#">거실장</a></li>
-                                <li><a href="#">테이블</a></li>
-                            </ul>
-                        </div>
-                    </li>
-            
-                    <li><a href="">주방가구</a>
-                        <!-- after -->
-                        <div class="view">
-                            <ul>
-                                <li><a href="#">식탁</a></li>
-                                <li><a href="#">홈바</a></li>
-                                <li><a href="#">수납장</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                <!-- <div class="sub_bg"></div> -->
-            </div>
-            <div class="nav_right">
-                <a href="#">로그인</a>
-                <a href="#"><img src="img/cart.png" alt=""></a>
-                <a href="#"><img src="img/search.png" alt=""></a>
-            </div>
-        </div>
-        
-    </header>
 
+    <header></header>
     <div class="showroom_top">
         <img class="showroom_main" src="img/showroom_main.png" alt="">
         <p class="top_txt">직접 만나는 인테리어, 우아미가구 쇼룸으로 초대합니다</p>
@@ -79,100 +25,26 @@
             <p class="color1">WOOAMI <span class="color5">FURNITURE</span></p>
             <p class="color2">SHOWROOM</p>
         </div>
+    </div>
 
-        <div class="showroom_table">
-            <div class="map_guide">
-                <ul class="the_place">
-                    <li class="place">인천지점</li>
-                    <li class="adress">
-                        인천 남동구 아암대로 1109 (논현고잔동) 1층 | 032-811-6588
-                        영업시간 : 월 ~ 금 09:00 ~ 19:00 / 토 ~ 일(공휴일) 09:00 ~ 19:00            
-                    </li>
-                    <li class="arrow_icon">
-                        <div class="arrow">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </li>
-                </ul>
-                <img class="hidden_map" src="img/showroom_map1.png" alt="">
+    <div class="map_guide">
+        <ul class="the_place">
+            <li>인천지점</li>
+            <li>
+                인천 남동구 아암대로 1109 (논현고잔동) 1층 | 032-811-6588
+                영업시간 : 월 ~ 금 09:00 ~ 19:00 / 토 ~ 일(공휴일) 09:00 ~ 19:00            
+            </li>
+            <div class="arrow">
+                <span></span>
+                <span></span>
             </div>
+        </ul>
 
-            <div class="map_guide">
-                <ul class="the_place">
-                    <li class="place">서울지점</li>
-                    <li class="adress">
-                        서울 금천구 디지털로9길 65 백상스타타워 1차 (가산동) 1층 | 02-868-2257
-                        영업시간 : 월 ~ 금 09:00 ~ 19:00 / 토 ~ 일(공휴일) 09:00 ~ 19:00
-                    </li>
-                    <li class="arrow_icon">
-                        <div class="arrow">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="map_guide">
-
-                <ul class="the_place">
-                    <li class="place">안산지점</li>
-                    <li class="adress">
-                        영업시간 : 월 ~ 금 09:00 ~ 19:00 / 토 ~ 일(공휴일) 09:00 ~ 19:00
-                        경기 안산시 상록구 용신로 443 (본오3동) 1층 | 031-643-1600
-                    </li>
-                    <li class="arrow_icon">
-                        <div class="arrow">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </li>
-                </ul>
-            </div> 
-            <div class="map_guide">
-                <ul class="the_place">
-                    <li class="place">안양지점</li>
-                    <li class="adress">
-                        경기 안양시 동안구 포도원로 19 (오전동)  | 031-427-2097
-                        영업시간 : 월 ~ 금 09:00 ~ 19:00 / 토 ~ 일(공휴일)  09:00 ~ 19:00
-                    </li>
-                    <li class="arrow_icon">
-                        <div class="arrow">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
 
 
 
-    <footer id="footer">
-        <div class="sns_logo">
-            <a href="" target="_blank"><img src="img/logo1.png" alt=""></a>
-            <a href="" target="_blank"><img src="img/logo2.png" alt=""></a>
-            <a href="" target="_blank"><img src="img/logo3.png" alt=""></a>
-        </div>
-        <div class="footer_wrap">
-            <div class="footer_in1">
-                <ul>
-                    <li>이용약관</li>
-                    <li class="privacy">개인정보처리방침</li>
-                    <li>이용안내</li>
-                    <li><img src="img/certificate1.png" alt=""></li>
-                </ul>
-                <p>우아미고객센터 02-868-2257(321)<br>
-                    Copyrightⓒ2009 WOOAMI ALL Rights Reserved.</p> 
-            </div>
-            <p class="footer_in2">
-                <strong>우아미가구</strong>
-                서울시 금천구 가산동 60-17 백상스타타워 1차 : 503호 (우 513-713)<br>
-                사업자번호 117-81-25953    |    통신판매업신고 제 2009-서울금천-0325호<br>
-                대표이사 강봉덕
-            </p>
-    </footer>
+    <footer></footer>
 
     
 </body>
