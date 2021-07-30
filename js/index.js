@@ -10,6 +10,8 @@ $(function(){
         autoplaySpeed:3000,
         speed:1000
     });
+
+
     $(".sub_slider").slick({
         arrows: true,
         dots: false,
@@ -20,16 +22,14 @@ $(function(){
         autoplaySpeed:3000,
         speed:1000
     });
-    $(".review_box").slick({
-        arrows: true,
-        dots: false,
+
+    $('.review_box').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay:true,
-        autoplaySpeed:3000,
-        speed:1000
-    });
+        autoplaySpeed:1000
 
+    });
 
 })
