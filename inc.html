@@ -1,72 +1,112 @@
-    <!-- header -->
+<!-- header -->
 
-    <header class="nav_wrap">
-        <div class="nav_cover">
-            <h1><a href="index.html"><img src="img/wooami_logo.png" alt=""></a> </h1>            
-            <div class="gnb">
-                <ul>
-                    <li><a href="company.html">우아미가구</a>
-                        <!-- after -->
-                        <div class="view">
-                            <ul>
-                                <li><a href="company.html">회사소개</a></li>
-                                <li><a href="showroom.html">쇼룸</a></li>
-                                <li><a href="partners.html">파트너쉽</a></li>
-                            </ul>
-                        </div>
-                    </li> 
-                
-                    <li><a href="product.html">침실가구</a>
-                        <!-- after -->
-                        <div class="view">
-                            <ul>
-                                <li><a href="product.html">침대</a></li>
-                                <li><a href="product.html">매트리스</a></li>
-                                <li><a href="product.html">서랍장</a></li>
-                            </ul>
-                        </div>
-                    </li>
-            
-                    <li><a href="product.html">거실가구</a>
-                        <!-- after -->
-                        <div class="view">
-                            <ul>
-                                <li><a href="product.html">소파</a></li>
-                                <li><a href="product.html">거실장</a></li>
-                                <li><a href="product.html">테이블</a></li>
-                            </ul>
-                        </div>
-                    </li>
-            
-                    <li><a href="product.html">주방가구</a>
-                        <!-- after -->
-                        <div class="view">
-                            <ul>
-                                <li><a href="product.html">식탁</a></li>
-                                <li><a href="product.html">홈바</a></li>
-                                <li><a href="product.html">수납장</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav_right">
-                <a href="#">로그인</a>
-                <a href="#"><img src="img/cart.png" alt=""></a>
-                <a href="#"><img src="img/search.png" alt=""></a>
-            </div>
-            <a class="trigger_menu" href="">
-                <span></span><span></span><span></span>
+<header>
+
+
+    <div class="nav_wrap">
+        <div class="logo_wrap">
+            <a href="index.html">
+                <img src="img/wooami_logo.png" alt="우아미가구 로고">
             </a>
-            <div class="gnb_reponsive_wrap">
-            </div>                
+        </div>            
+        <div class="gnb">
+            <ul>
+                <li><a class="dep0" href="company.html">우아미가구</a>
+                    <ul class="dep1">
+                        <li><a href="company.html">회사소개</a></li>
+                        <li><a href="showroom.html">쇼룸</a></li>
+                        <li><a href="partners.html">파트너쉽</a></li>
+                    </ul>
+                </li>
+                <li><a class="dep0"  href="product.html">침실가구</a>
+                    <ul class="dep1">
+                        <li><a href="product.html">침대</a></li>
+                        <li><a href="product.html">매트리스</a></li>
+                        <li><a href="product.html">서랍장</a></li>
+                    </ul class="dep1">
+                </li>
+                <li><a class="dep0"  href="product.html">거실가구</a>
+                    <ul class="dep1">
+                        <li><a href="product.html">소파</a></li>
+                        <li><a href="product.html">거실장</a></li>
+                        <li><a href="product.html">테이블</a></li>
+                    </ul>
+                </li>
+                <li><a class="dep0"  href="product.html">주방가구</a>
+                    <ul class="dep1">
+                        <li><a href="product.html">식탁</a></li>
+                        <li><a href="product.html">홈바</a></li>
+                        <li><a href="product.html">수납장</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
+        <div class="nav_right">
+
+            <!-- 로그인 팝업 -->
+            <input type="checkbox" id="login-popup">
+            <label for="login-popup">로그인</label>
+            <div class="login-box">
+                <div>
+                    <div class="login-wrap">
+                        <div class="login-logo"><img src="img/wooami_logo.png" alt=""></div>
+                        <label for="login-popup" class="login_cancel">
+                            <span></span>
+                            <span></span>
+                        </label>
+                        
+                        
+                        <!-- 로그인 아이디 -->
+                        <input type="text" name="id"  maxlength="10" placeholder="아이디"><br>
+                        <!-- 로그인 비밀번호 -->
+                        <input type="password" name="password" maxlength="10" placeholder="비밀번호"><br>
+                        <input type="submit" name="login" value="로그인">
+                        <!-- 로그인 버튼 -->
+                    </div>
+                </div>
+                <label for="login-popup"></label>
+            </div>
+
+
+
+
+            <span class="cart">
+                <a href="cart.html">
+                    <img src="img/cart.png" alt="">
+                </a>
+            </span>
+
+                <!-- 검색창 팝업 -->
+
+            <span class="search_icon">
+                <a href="#">
+                    <img src="img/search.png" alt="">
+                </a>
+            </span>
+            <span class="search_cancle_icon">
+                <span></span>
+                <span></span>
+            </span>
+        </div>
+        
+        <div class="search">
+            <input type="text" class="search_input" placeholder="검색어를 입력해 주세요" >
+            <input type="submit" value="검색">
+                </button>
+        </div>
+        <!-- <a class="trigger_menu" href="">
+            <span></span><span></span><span></span>
+        </a>
+        <div class="gnb_reponsive_wrap">
+        </div>                 -->
+    </div> 
     </header>
 
 
+    
     <!-- footer -->
 
-    <footer id="footer">
+    <footer>
         <div>
             <div class="sns_logo">
                 <a href="" target="_blank"><img src="img/logo1.png" alt=""></a>
@@ -74,21 +114,7 @@
                 <a href="" target="_blank"><img src="img/logo3.png" alt=""></a>
             </div>
             <div class="footer_wrap">
-                <div class="footer_in1">
-                    <ul>
-                        <li>이용약관</li>
-                        <li class="privacy">개인정보처리방침</li>
-                        <li>이용안내</li>
-                        <li><img src="img/certificate1.png" alt=""></li>
-                    </ul>
-                    <p>우아미고객센터 02-868-2257(321)<br>
-                        Copyrightⓒ2009 WOOAMI ALL Rights Reserved.</p> 
-            </div>
-                <p class="footer_in2">
-                    <strong>우아미가구</strong>
-                    서울시 금천구 가산동 60-17 백상스타타워 1차 : 503호 (우 513-713)<br>
-                    사업자번호 117-81-25953    |    통신판매업신고 제 2009-서울금천-0325호<br>
-                    대표이사 강봉덕
-                </p>
+                <p><strong>우아미고객센터</strong> 02-868-2257(321)<br>
+                Copyrightⓒ2009 WOOAMI ALL Rights Reserved.</p>
         </div>
     </footer>

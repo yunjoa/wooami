@@ -3,23 +3,40 @@
 /* index.css */
 
 .main{
-    padding-top: 50px;
+    padding-top: 75px;
 }
-.main-slider{
+.main_slider{
     transition: 0.5s;
 }
-.main-slider li img{
-    display: inline-block;
-}
-.main-slide img{
+.main_slider li{position:relative;}
+.main_slide img{
     width: 100%;
+}
+
+.slide_txt{
+    position: absolute;
+    top: 50%; left: 50%;
+    transition: all 300ms ease;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+
+h3{
+    font-size: 2rem;
+    color: #3c7249;}
+h3 span{ 
+    color: wheat;}
+.h3-destxt{
+
 }
 
 
 #trend {
     width: 80%;
     margin: auto;
-    padding: 7% 0;
+    padding: 4% 0;
 }
 .title_font {
     font-size: 2rem;
@@ -63,9 +80,10 @@
 
 }
 .hidden_trend p { 
+    position: absolute;
+    top: 50%; left: 0%;
     width: 100%; height: 100%;
     text-align: center;
-    margin-top: 45%;
     color: white;
 }
 .right_trend > a:hover div {
@@ -86,7 +104,10 @@
     grid-row: 2/3;
 }
 
+
+
 #full_banner {
+    padding: 4% 0;
 }
 #full_banner > div {
     width: 100%; 
@@ -100,7 +121,7 @@
 #about_wooami {
     width: 80%;
     margin: auto;
-    padding: 7% 0;
+    padding: 4% 0;
 }
 
 .wooami_intro_wrap{
@@ -109,7 +130,7 @@
     align-items: center;
 }
 .wooami_intro_wrap > img {
-    width: 70%;
+    width: 70%; min-width: 600px;
 }
 .wooami_intro {
     width: 60%;
@@ -153,15 +174,16 @@
     padding-bottom: 30px;  
 }
 
-.review_box > ul{
-    width: 100%; 
-    display: flex;
+
+.review_box{
+    width: 100%;
+    /* display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-end; */
 
 }
-.review_box > ul > li{
-    width: 500px; height: 560px;
+.review_box li{
+    width: 400px; height: 560px;
     padding: 0 10px ;
     overflow: hidden;
 
@@ -181,13 +203,11 @@
 .review_box p b{
     line-height: 2rem;   
 }
-.review_box img{
-    width: 100%; height: 400px;
+.review_box > li > img{
+    width: 100%; height: auto;
 }
 
 
-
-.main
 
 
 
