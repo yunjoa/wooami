@@ -71,34 +71,33 @@
 
 .the_place > li{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     padding: 3%;
     border-bottom: 1px solid #999;
 }
-.the_place > li > p {
+.the_place > li > b{
     width: 10%;
     padding: 0 5% 0 0;
     font-weight: 900;
+    border: #333 2px solid;
 }
-.the_place > li > span{
+.the_place > li > p{
     font-weight: 300;
+    width: 80%;
     padding: 0 5%;
     line-height: 1.5rem;
-}
-
-.arrow_icon {
-    width: 5%;
-    margin-left: auto;
     border: springgreen 2px solid;
 }
 
-.arrow{
-    width: 50px; height: 40px;
-    margin-left: auto;
-    position:absolute;
+.arrow {
+    border: plum 3px solid;
+    width: 5%; height: 50px;
+    
 }
-.arrow span{
-    width:30%; height:2px;
+
+.arrow > span{
+    width: 45px; height:2px;
     background-color:rgb(0, 65, 0);
 }
 .arrow span:nth-child(1){
@@ -116,11 +115,11 @@
 }
 .arrow:active span:nth-child(2){
     transform: rotate(45deg);
-}
+} 
 
 
 
-/* 
+
 
 .hidden_map {
     display: none;
@@ -133,4 +132,4 @@
 
 .hidden_map > img{
     width: 100%;
-} */
+}

@@ -6,7 +6,7 @@ $(function(){
         success:function(data){
             let place, address,showroomInfo= '', idx=0;
             data.showroom_table.forEach(function(h){
-                showroomInfo +=`<li><p>${h.place}</p><span>${h.address}</span></li><div class="arrow"><span><span><span></span></div>`
+                showroomInfo +=`<li><b>${h.place}</b><p>${h.address}</p><div class="arrow"><span></span><span></span></div></li>`
             })
             place = data.showroom_table[idx].place;
             address = data.showroom_table[idx].address;
