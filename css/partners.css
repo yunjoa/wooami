@@ -3,9 +3,13 @@
 /* partners.css */
 
 
-.main img {
+.main {}
+.main-pic-wrap{
     width: 100%;
-    padding: 5% 0 ;
+    padding-top: 75px;
+}
+.main-pic{
+    width: 100%;
 }
 
 .partners1 {
@@ -38,8 +42,9 @@
 
 .partners2 {
     width: 80%;
+    padding-bottom: 7%;
     margin: 0 auto;
-    padding: 5% 0;
+    
 }
 
 
@@ -58,14 +63,11 @@
 .partners3 {
     width: 80%;
     margin: 0 auto;
-    padding: 5% 0;
-}
-.partners3 > img {
-    width: 100%;
-    /* object-fit:cover; */
 }
 
 .partners3_inner li{
+    width: 100%;
+    padding-bottom: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,8 +77,14 @@
     text-align: right;
 }
 
-.partners3_inner li img {
+.partners3-img {
     width: 60%;
+    height: auto;
+}
+
+.partners3-img > img {
+    width: 100%;
+    object-fit: cover;
 }
 .partners3_inner li p {
     width: 35%;

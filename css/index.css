@@ -2,6 +2,12 @@
 @import url('common.css');
 /* index.css */
 
+
+
+
+
+
+
 .main{
     padding-top: 75px;
 }
@@ -41,8 +47,14 @@ h3 span{
 #trend {
     width: 80%;
     margin: auto;
-    padding: 4% 0;
+    padding: 5% 0;
+
 }
+@keyframes trend {    
+    0%{ transform: translateY(-70%); }  
+    100%{ transform: translateY(0%); }    
+}
+
 .title_font {
     font-size: 2rem;
     display: flex;  
@@ -117,7 +129,7 @@ h3 span{
 
 
 #full_banner {
-    padding: 4% 0;
+    padding: 3% 0;
 }
 #full_banner > div {
     width: 100%; 
@@ -133,7 +145,7 @@ h3 span{
 #about_wooami {
     width: 80%;
     margin: auto;
-    padding: 4% 0 8% 0;
+    padding: 5% 0 8% 0;
 }
 
 .wooami_intro_wrap{

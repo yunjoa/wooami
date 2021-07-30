@@ -11,7 +11,9 @@ img{vertical-align: middle;}
 li {list-style: none; }
 
 
-
+.up-on-scroll, .right-left-scroll{
+    transition: transform 0.7s, opacity 1s;
+}
 
 
 body{}
@@ -72,7 +74,7 @@ header.hide {top: -75px;}
     top: 75%;
     width: 0%;
     height: 3px;
-    background: #3c7249;;
+    background: #3c7249;
     transform: translateX(-50%);
     transition: all .5s;
 }

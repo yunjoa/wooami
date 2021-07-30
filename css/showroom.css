@@ -4,7 +4,7 @@
 
 .color1
 {font-size: 3rem; line-height: 3rem;
-    color: rgb(0, 65, 0);
+    color: #3c7249;
 }
 .color2 {
     font-size: 3rem;
@@ -21,12 +21,12 @@
 }
 .color5 {
     font-size: 3rem; line-height: 3rem;
-    color: rgb(10, 141, 10);
+    color: #3c7249;
 }
 
 .showroom_top{
     width: 100%;
-    padding-top: 5% ;
+    padding-top:75px ;
     position: relative;
 }
 .showroom_top > img {
