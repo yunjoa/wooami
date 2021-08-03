@@ -95,23 +95,20 @@
 .the_place > ul >li:nth-of-type(3){
     padding-right: 3%;
     /* border: plum 3px solid; */
-    width: 7%; height: 30px;
+    width: 7%; height: 35px;
     overflow: hidden;
 }
 .arrow {
-    width: 50px; height:20px;
+    width: 50px; height:35px;
     top: 0;
 }
 .arrow >img {
     width: 100%;    
+    transform: rotate(180deg);
 }
-
-.kakao-map{
-    display: block;
-    height: 400px;
+.arrow >img:active {
+    transform: rotate(0deg);
 }
-
-
 
 
 
@@ -119,9 +116,13 @@
 
 
 .kakao-map {
-    width: 100%;
+    width: 100%; height: 500px;
     margin: 0 auto;
     padding: 0 5% 0 20%;
-    border: #3c7249 2px solid;
+    /* overflow: hidden; */
+    /* display: float; */
+    /* position: absolute; */
+    /* border: #3c7249 2px solid; */
     
+    display: none;
 }

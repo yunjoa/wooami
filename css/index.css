@@ -160,7 +160,7 @@ h3 span{
     width: 100%; min-width: 600px;
 }
 .wooami_intro {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 0 20%;
     position: absolute;
@@ -172,13 +172,13 @@ h3 span{
     transform: translateX(33%);
 }
 .color1 {
-    font-size: 4.2rem; 
+    font-size: 4rem; 
     line-height: 3rem;
     color: #3c7249;
     font-family: 'Raleway';
 }
 .color2 {
-    font-size: 4.2rem;
+    font-size: 4rem;
     line-height: 7rem;
     color: #333;
     font-family: 'Raleway';

@@ -4,7 +4,9 @@ $(function(){
     $.ajax({
         url:'data/showroom_data.json',
         success:function(data){
+
             let place, address,showroomInfo= '', idx=0;
+            
             data.showroom_table.forEach(function(h){
                 showroomInfo +=`<ul><li class="the_place_store">${h.place}</li>
                 <li class="the_place_address">${h.address}</li>
@@ -16,7 +18,18 @@ $(function(){
             maptimestamp = data.showroom_table[idx].maptimestamp;
             mapkey = data.showroom_table[idx].mapkey;
             $('.the_place').html(showroomInfo)
-            
+
+
+
+            $('.arrow > img').on('click', function(){
+                var currentClass = $(this).hasClass("active");
+                $(this).addClass('active');
+                if(currentClass !== 'active'){
+                    $(this).removeClass('active');
+                }
+                $('.map-1').show()
+            })
+                        
         },
         error:function(e){
             console.log(e.status);
@@ -24,20 +37,7 @@ $(function(){
             console.log(e.responseText);
             
         }
+
     })
 })
 
-
-
-$('.arrow > span').on('click', function(){
-
-
-    console.log('.the_place')
-})
-    // click:function(){
-    //     var currentClass = $(this).hasClass("active");
-    //     $(this).addClass('active');
-    //     if(currentClass !== 'active'){
-    //         $(this).removeClass('active');
-    //     }
-    // }

@@ -51,26 +51,25 @@
 .roller {
     border-top: 1px solid #666  ;
     border-bottom: 1px solid #666  ;
-    width: 100%; height: 200px; 
+    width: 100%; height: 180px; 
     position: relative;
     overflow: hidden;
 
 }
 .roller-inner{
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     position: absolute;
-    animation: marquee 7s linear infinite;
+    animation: marquee 8s linear infinite;
 
 }
 .roller-inner > div {
     width: 200px;
-    height: 150px;
-    padding: 30px;
+    padding: 30px 80px;
 
     float: left;
     width: 100%;
