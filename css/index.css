@@ -243,6 +243,10 @@ h3 span{
     line-height: 1.4rem;
 } 
 
+.review_txt > p > b {
+    display: inline-block;
+    padding-bottom: 10px;
+}
 .review_txt > p {
     font-weight: 200;
     line-height: 1.5rem;

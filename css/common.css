@@ -73,7 +73,7 @@ header.hide {top: -75px;}
     left: 50%;
     top: 75%;
     width: 0%;
-    height: 3px;
+    height: 2px;
     background: #3c7249;
     transform: translateX(-50%);
     transition: all .5s;

@@ -51,12 +51,41 @@
 .roller {
     border-top: 1px solid #666  ;
     border-bottom: 1px solid #666  ;
-    display: flex;
+    width: 100%; height: 200px; 
+    position: relative;
     overflow: hidden;
+
 }
-.roller > img {
-    width: 30%;
-    margin: 0 5%;
+.roller-inner{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    animation: marquee 7s linear infinite;
+
+}
+.roller-inner > div {
+    width: 200px;
+    height: 150px;
+    padding: 30px;
+
+    float: left;
+    width: 100%;
+
+}
+.roller-inner > div > img {
+    width: 200px;
+    display: inline-block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
 }
 
 

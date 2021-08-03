@@ -50,86 +50,78 @@
 }
 
 
-.showroom_table{
-}
 
 
 .map_guide {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    
+}
+.the_place{
     border-collapse:collapse;
     width: 100%;
-        position:relative;
-
-
-}
-.the_place {
-    width: 80%;
-    margin: 0 10% 5%;
-    border-top: 1px #333 solid;
-    position:relative;
-
-}
-
-.the_place > li{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 3%;
-    border-bottom: 1px solid #999;
-}
-.the_place > li > b{
-    width: 10%;
-    padding: 0 5% 0 0;
-    font-weight: 900;
-    border: #333 2px solid;
-}
-.the_place > li > p{
-    font-weight: 300;
-    width: 80%;
-    padding: 0 5%;
-    line-height: 1.5rem;
-    border: springgreen 2px solid;
-}
-
-.arrow {
-    border: plum 3px solid;
-    width: 5%; height: 50px;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
     
 }
 
-.arrow > span{
-    width: 45px; height:2px;
-    background-color:rgb(0, 65, 0);
-}
-.arrow span:nth-child(1){
-    transform: rotate(45deg);
-    top: calc(30%)
-}
-.arrow span:nth-child(2){
-    transform: rotate(-45deg);
-    top: calc(30%);
-    left: calc(40%);
-}
-
-.arrow:active span:nth-child(1){
-    transform: rotate(-45deg);
-}
-.arrow:active span:nth-child(2){
-    transform: rotate(45deg);
-} 
-
-
-
-
-
-.hidden_map {
-    display: none;
-    width: 75%;
-    margin-left: auto;
-    padding: 2% 0 5% 0;
-    background: #333;
-    height: 800px;
-}
-
-.hidden_map > img{
+.the_place > ul {
+    padding: 3% 0;
     width: 100%;
+    /* border: 3px rgb(146, 0, 0) solid; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+    position: relative;
+}
+
+
+.the_place_store{    
+    width: 17%; 
+    padding-left: 3%;
+    /* border:springgreen 2px solid; */
+    font-weight: 600;
+}
+
+.the_place_address{
+    font-weight: 300;
+    width: 70%;
+    line-height: 1.5rem;
+    /* border: rgb(0, 15, 8) 2px solid; */
+}
+
+
+.the_place > ul >li:nth-of-type(3){
+    padding-right: 3%;
+    /* border: plum 3px solid; */
+    width: 7%; height: 30px;
+    overflow: hidden;
+}
+.arrow {
+    width: 50px; height:20px;
+    top: 0;
+}
+.arrow >img {
+    width: 100%;    
+}
+
+.kakao-map{
+    display: block;
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+.kakao-map {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5% 0 20%;
+    border: #3c7249 2px solid;
+    
 }

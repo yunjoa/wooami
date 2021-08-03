@@ -90,9 +90,9 @@ $(function(){
     }
 
     function isElementRightToLeft(elem2, triggerDiff2) {
-        const { left } = elem2.getBoundingClientRect();
+        const { right } = elem2.getBoundingClientRect();
         const { innerWidth } = window;
-        return left > innerWidth + (triggerDiff2 || 0);
+        return right > innerWidth + (triggerDiff2 || 0);
     }
     
     function handleScroll() {

@@ -6,10 +6,15 @@ $(function(){
         success:function(data){
             let place, address,showroomInfo= '', idx=0;
             data.showroom_table.forEach(function(h){
-                showroomInfo +=`<li><b>${h.place}</b><p>${h.address}</p><div class="arrow"><span></span><span></span></div></li>`
+                showroomInfo +=`<ul><li class="the_place_store">${h.place}</li>
+                <li class="the_place_address">${h.address}</li>
+                <li class="arrow"><img src="img/green_arrow.png" alt=""></li></ul>`
+                
             })
             place = data.showroom_table[idx].place;
             address = data.showroom_table[idx].address;
+            maptimestamp = data.showroom_table[idx].maptimestamp;
+            mapkey = data.showroom_table[idx].mapkey;
             $('.the_place').html(showroomInfo)
             
         },
@@ -17,7 +22,22 @@ $(function(){
             console.log(e.status);
             console.log(e.error);
             console.log(e.responseText);
-
+            
         }
     })
 })
+
+
+
+$('.arrow > span').on('click', function(){
+
+
+    console.log('.the_place')
+})
+    // click:function(){
+    //     var currentClass = $(this).hasClass("active");
+    //     $(this).addClass('active');
+    //     if(currentClass !== 'active'){
+    //         $(this).removeClass('active');
+    //     }
+    // }
