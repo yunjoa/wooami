@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url(common.css);
+/* showroom.css */
+
+.color1
+{font-size: 3rem; line-height: 3rem;
+    color: #3c7249;
+}
+.color2 {
+    font-size: 3rem;
+    color:#666; 
+}
+.color3 {
+    font-size: 1.2rem;
+    line-height: 4rem;
+}
+.color4 {
+    line-height: 1.7rem;
+    font-weight: 500;
+    padding-bottom: 2%;
+}
+.color5 {
+    font-size: 3rem; line-height: 3rem;
+    color: #3c7249;
+}
+
+.showroom_top{
+    width: 100%;
+    padding-top:75px ;
+    position: relative;
+}
+.showroom_top > img {
+    width: 100%;
+}
+.top_txt { 
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    color: white;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.showroom {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5% 0 5%;
+}
+.showroom_title{
+    text-align: center;
+}
+
+
+
+
+.map_guide {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    
+}
+.the_place{
+    border-collapse:collapse;
+    width: 100%;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    
+}
+
+.the_place > ul {
+    padding: 3% 0;
+    width: 100%;
+    /* border: 3px rgb(146, 0, 0) solid; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+    position: relative;
+}
+
+
+.the_place_store{    
+    width: 17%; 
+    padding-left: 3%;
+    /* border:springgreen 2px solid; */
+    font-weight: 600;
+}
+
+.the_place_address{
+    font-weight: 300;
+    width: 70%;
+    line-height: 1.5rem;
+    /* border: rgb(0, 15, 8) 2px solid; */
+}
+
+
+.the_place > ul >li:nth-of-type(3){
+    padding-right: 3%;
+    /* border: plum 3px solid; */
+    width: 7%; height: 35px;
+    overflow: hidden;
+}
+.arrow {
+    width: 50px; height:35px;
+    top: 0;
+}
+.arrow >img {
+    width: 100%;    
+    transform: rotate(180deg);
+}
+.arrow >img:active {
+    transform: rotate(0deg);
+}
+
+
+
+
+
+
+.kakao-map {
+    width: 100%; height: 500px;
+    margin: 0 auto;
+    padding: 0 5% 0 20%;
+    /* overflow: hidden; */
+    /* display: float; */
+    /* position: absolute; */
+    /* border: #3c7249 2px solid; */
+    
+    display: none;
+}
